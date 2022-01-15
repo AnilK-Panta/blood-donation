@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Signika", sans-serif;
+}
+.header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: inherit;
+}
+.bgRect {
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(384.02px);
+  position: absolute;
+  z-index: 0;
+}
+.bgCircle1 {
+  position: absolute;
+  background-color: #47caf3;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  right: -200px;
+  top: -200px;
+  z-index: -1;
+}
+.bgCircle2 {
+  position: absolute;
+  background-color: #ffdb80;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  left: -200px;
+  top: -200px;
+  z-index: -1;
+}
+.main {
+  position: absolute;
+  width: calc(100% - 200px);
+  margin: 0 100px;
+  position: absolute;
+  z-index: 2;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+nav ul li a {
+  color: #686c75;
+}
+nav .nav-logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fd5b2f;
+}
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.contentLeft p {
+  font-size: 18px;
+}
+.contentLeft h1 {
+  width: 430px;
+  font-size: 32px;
+}
+.searchBar {
+  width: 500px;
+  padding: 10px;
+  background: rgba(243, 243, 243, 0.6);
+  backdrop-filter: blur(35.5212px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.searchBar input {
+  width: 69%;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.searchBar button {
+  padding: 8px 30px;
+  background: #fd5b2f;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contentRight {
+  width: 40%;
+}
+.heroImage {
+  background-image: url(./images/blood1.jpg);
+  background-size: cover;
+  width: 350px;
+  height: 500px;
+  background-color: #fd5b2f;
+  border-radius: 300px 300px 0 0;
+  position: relative;
+}
+.heroImage::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 300px 300px 0 0;
+  left: -20px;
+  top: -10px;
+  z-index: -1;
+  border: 2px solid #fd5b2f;
+}
+.hero1 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #fd5b2f;
+  position: absolute;
+  right: -90px;
+  top: -50px;
+}
+.hero2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fd5b2f;
+  position: absolute;
+  right: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fd5b2f;
+  position: absolute;
+  right: -150px;
+  top: 100px;
+}
