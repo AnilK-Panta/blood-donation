@@ -88,6 +88,19 @@ nav ul {
   display: flex;
   gap: 20px;
 }
+.nav-ite2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav-ite2 button {
+  padding: 6px 16px;
+  border-radius: 9px;
+  font-size: 16px;
+  color: white;
+  background-color: #fd5b2f;
+  border: none;
+}
 nav ul li {
   list-style: none;
   font-size: 16px;
