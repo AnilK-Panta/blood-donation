@@ -46,10 +46,16 @@
   z-index: 100;
   width: 100%;
   height: calc(100vh - 70px);
-  background: linear-gradient(180deg, rgba(253, 91, 47, 80%) 0%, #fd5b2f 100%);
+  background-color: white;
+  /* background: linear-gradient(180deg, rgba(253, 91, 47, 100%) 0%, #fd5b2f 100%); */
 
   justify-content: center;
   align-items: center;
+}
+.mobileNav ul li {
+  font-size: 16px;
+  font-weight: 600;
+  color: #686c75;
 }
 .activeNav {
   display: flex;
