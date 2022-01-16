@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="style.css">
     <title>Blood Donation</title>
 </head>
 
 <body>
+    <section class="mobileNav" id="mobileNav">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>SERVICES</li>
+            <li>SPACE</li>
+            <li>EVENTS</li>
+        </ul>
+    </section>
     <section class="header">
         <div class="bgRect"></div>
         <div class="bgCircle1"></div>
@@ -31,6 +44,9 @@
                         <li><a href="#" style="text-decoration: none;">EVENTS</a></li>
 
                     </ul>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
                 </div>
             </nav>
             <div class="content">
@@ -143,7 +159,12 @@
             </ul>
         </div>
     </footer>
-
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function () {
+            var hamburger = document.getElementById("mobileNav");
+            hamburger.classList.toggle("activeNav");
+        })
+    </script>
 </body>
 
 </html>
